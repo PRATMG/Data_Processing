@@ -1,8 +1,12 @@
 # Assignment 6: Data Processing System (Java & Go)
+**Student**: Prakash Tamang 
+**Course**: Advanced Programming Languages  
+**Assignment**: 6 - Data Processing System  
+**Date**: April 10, 2025
 
 This repository contains a multi-threaded Data Processing System implemented in both **Java** and **Go**, simulating worker threads (or goroutines) that process tasks from a shared queue and write results to an output file.
 
-## 🧠 Assignment Overview
+## Assignment Overview
 
 The goal is to design and implement a system where multiple worker threads:
 - Retrieve tasks from a shared queue
@@ -17,7 +21,7 @@ This system is implemented using:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 assignment-6/
@@ -38,9 +42,9 @@ assignment-6/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
-### ▶️ Java Version
+### Java Version
 
 **Requirements**: Java 11+ and Maven
 
@@ -54,7 +58,7 @@ You will see worker threads processing tasks and a `results.txt` file created in
 
 ---
 
-### ▶️ Go Version
+### Go Version
 
 **Requirements**: Go 1.20+ installed
 
@@ -67,23 +71,8 @@ Goroutines will process tasks and output will be written to `results.txt`.
 
 ---
 
-## 📝 Report Highlights
+## Report Highlights
 
 - The Java version uses `ExecutorService` for thread pools, `ReentrantLock` for file safety, and `BlockingQueue` for task sharing.
 - The Go version uses idiomatic concurrency primitives like channels and goroutines for communication and synchronization.
 - Both systems simulate delay and handle errors gracefully, logging and shutting down with friendly messages.
-
----
-
-## 📅 Submission Info
-
-**Student**: Prakash  
-**Course**: Advanced Programming Languages  
-**Assignment**: 6 - Data Processing System  
-**Date**: April 10, 2025
-
----
-
-## 📜 License
-
-This project is for academic demonstration purposes.
